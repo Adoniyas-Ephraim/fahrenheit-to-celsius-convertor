@@ -68,8 +68,6 @@ def convert_button_clicked():
         result_label.grid(column=0, row=1, sticky='W', **options)
     except ValueError as error:
         showerror(title='Error', message='Please put a value first')
-    except NameError as error:
-        print('Unable to convert')
 
 
 convert_button = ttk.Button(frame, text='Convert')
